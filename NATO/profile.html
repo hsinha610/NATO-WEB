@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zxx">
+    
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Plugin Min CSS -->
+        <link rel="stylesheet" href="css/plugin.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Title</title>
+        <style>
+
+            h5{
+                font-size:30px;
+                margin-top: -4.5%;
+                position: absolute;
+                margin-left:10%;
+            }
+            .spcbtn{
+                background-color:whitesmoke;
+                border:1px solid whitesmoke;
+                border-radius: 5%;
+                margin-left:55%;
+                height:50px;
+                position:absolute;
+                cursor:pointer;
+            }
+            /* The Modal (background) */
+            .modal1 {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .modal1-content {
+              position: relative;
+              background-color: #fefefe;
+              margin: auto;
+              padding: 0;
+              border: 1px solid #888;
+              width: 60%;
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+              -webkit-animation-name: animatetop;
+              -webkit-animation-duration: 0.4s;
+              animation-name: animatetop;
+              animation-duration: 0.2s
+            }
+            
+            /* Add Animation */
+            @-webkit-keyframes animatetop {
+              from {top:-300px; opacity:0} 
+              to {top:0; opacity:1}
+            }
+            
+            @keyframes animatetop {
+              from {top:-300px; opacity:0}
+              to {top:0; opacity:1}
+            }
+            
+            /* The Close Button */
+            .close1 {
+              color: white;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close1:hover,
+            .close1:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            
+            .modal1-header {
+              padding: 2px 16px;
+              background-color:rgb(226, 31, 145) ;
+              color: white;
+            }
+            .modal1-body {padding: 2px 16px;}
+            </style>
+<script>
+document.getElementById("b1").onclick=function()
+{
+    document.getElementById("id01").style.display="none";
+}
+document.getElementById("b1").onclick=function()
+{
+    document.getElementById("id01").style.display="none";
+}
+// Get the modal
+var modal = document.getElementById("myModal1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53776455-15"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-53776455-15');
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-offset="70">
+
+        
+        <!-- Navbar Area -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" style="height: 100px;" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html" style="font-size: 40px;">Back to Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+
+        <div class="container-fluid profile">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-6">
+                    <div class="pt-5 single-demo">
+                        <div class="image" style="height: 400px;">
+                            <p><b> Name :</b> Naman Mishra </p>
+                            <p><b> E-Mail : </b> naman1474@gmail.com </p>
+                            <p><b> Date of Birth : </b> 13/10/1999 </p>
+                            <p><b> About Me : </b> A passionate about travelling different places. <br> Have Enthusiasm for exploring different historic places. </p>
+                            <p><b> Home Town : </b> Jaipur </p>
+                            <p><b> Current City : </b> Dhanbad </p>
+                            <img src="img/icon.png" class="prof_icon" alt="img">
+                            <br>
+                            <button id="myBtn"class="friendA" style="font-weight: bold">Friends List</button>
+                            <button id="myBtn2"class="editProf" style="font-weight: bold">Edit Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Plugin Min JS -->
+        <script src="js/plugin.min.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span  onclick="document.getElementById('myModal').style.display='none';" class="close mt-0">&times;</span>
+                <h2 style="text-align:center; font-size: 30px; margin-top: 10px;">FRIENDS LIST</h2>
+              </div>
+              <div class="modal-body">
+                <ul style="list-style-type: none;"> 
+                  <hr>
+                    <li>
+                        <img src="img/developer.png" alt="profile.pic" width="55px" height="55px">
+                        <h7>Ujjawal</h7>
+                        <button class="spcbtn">View Profile</button>
+                    </li><hr>
+                    <li>
+                        <img src="img/developer.png" alt="profile.pic" width="55px" height="55px">
+                        <h7>Deepesh</h7>
+                        <button class="spcbtn">View Profile</button>
+                    </li><hr>
+                    <li>
+                        <img src="img/developer.png" alt="profile.pic" width="55px" height="55px">
+                        <h7>Harshit</h7>
+                        <button class="spcbtn">View Profile</button>
+                    </li>
+                    <hr>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+          
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+          
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+          
+          // When the user clicks the button, open the modal 
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+          
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+          </script>
+
+        <!-- Plugin Min JS -->
+        <script src="js/plugin.min.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
